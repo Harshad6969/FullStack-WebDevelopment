@@ -7,31 +7,72 @@
     <title>Booking Form</title>
 </head>
 <body>
-    <h1>Kindly Schedule your trip</h1>
+    <h1>Schdeule Your Holiday on Paradise Island</h1>
     <form>
-        <label for="Username">Username</label>
+        <label for="name">Full Name:</label>
         <input 
-        type="text" 
-        id="Username" 
-        name="Username" 
+        type="text"
+        id="name" 
+        name-="fullname" 
         required
-        placeholder="Enter your first name"
-        value="your name"
+        placeholder="Enter Your Name"
+        />
+        <br /> <br />
+
+        <label for="mail">Email:</label>
+        <input 
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="abc@gmail.com"
+        />
+        <br /><br />
+        
+        <label for="tel">Phone Number:</label>
+        <input 
+        type="tel"
+        id="tel"
+        name="tel"
+        required
+        placeholder="+91-999999999"
+        />
+        <br /><br />
+
+        <label for="date">Date Of Birth:</label>
+        <input 
+        type="date"
+        id="date"
+        name="date"
+        min="2021-01-01"
+        max="2029-01-01"
+        required
+        />
+        <br /><br />
+
+        <label for="Arrival">Arrival:</label>
+        <input 
+        type="datetime-local"
+        id="Arrival"
+        name="Arrival"
+        required
+        />
+        <br /><br />
+
+        <label for="Departure">Email:</label>
+        <input 
+        type="datetime-local"
+        id="Departure"
+        name="Departure"
+        required
+        />
+        <br /><br />
+
+        <input 
+        type="submit"
+
         />
 
-        <br /> <br />
-        <label for="pass">Password</label>
-        <input 
-        type="password" 
-        id="pass" 
-        name="password"
-        value="your password"
-        required
-        minlength="6"
-        maxlength="8"
-        size="30"
-        /> <br /> <br />
-        <input type="submit" />
     </form>
 </body>
 </html>
