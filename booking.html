@@ -9,6 +9,8 @@
 <body>
     <h1>Schdeule Your Holiday on Paradise Island</h1>
     <form>
+        <fieldset>
+            <legend>Personal Information</legend>
         <label for="name">Full Name:</label>
         <input 
         type="text"
@@ -48,8 +50,11 @@
         max="2029-01-01"
         required
         />
+        </fieldset>
         <br /><br />
-
+        
+        <fieldset>
+            <legend>Booking Details</legend>
         <label for="Arrival">Arrival:</label>
         <input 
         type="datetime-local"
@@ -68,11 +73,112 @@
         />
         <br /><br />
 
+        <!-- Number of travelsrs -->
+         <label for="travelllers">No Of Travellers:</label>
+         <input 
+         type="number"
+         id="travelllers"
+         name="travelllers"
+         min="1"
+         max="50"
+         />
+         </fieldset>
+         <br /><br />
+        
+         <fieldset>
+
+        <!--Accomodation Preferance-->
+        <label for="pref">Accomodation Preferences:</label>
+        <select
+        id="pref"
+        name="Accomodation">
+        <optgroup label="Cars">
+            <option value="Maruti Swift">Maruti Swift</option>
+            <option value="WagonR">WagonR</option>
+            <option value="Creta">Creta</option>
+            <option value="Honda city">Honda city</option>
+
+
+        </optgroup>
+        <option value="Hotel">Hotel</option>
+        <option value="Resort">Resort</option>
+        <option value="Thai SPA">Thai SPA</option>
+        <option value="Washroom">Washroom</option>
+        <option value="Villa" selected>Villa</option>
+        </select>
+ 
+            <legend>Activities</legend>
+         <p><b>Preffered Activities</b></p>
+
         <input 
-        type="submit"
-
+        type="checkbox" 
+        id="Snorkelling"
+        name="activity"
+        value="Snorkelling"
         />
+        <label for="Snorkelling">Snorkelling</label><br />
+        <input 
+        type="checkbox" 
+        id="cricket"
+        name="activity"
+        value="cricket"
+        checked
+        />
+        <label for="cricket">cricket</label><br />
+        <input 
+        type="checkbox" 
+        id="football"
+        name="activity"
+        value="football"
+        />
+        <label for="football">football</label><br />
+        </fieldset>
+        <br /><br />
+        
+        <fieldset>
+            <legend> Select the Options </legend> 
+        <!-- Baby On Board - Radio -->
+         <p><b>Baby On Board</b></p>
+         <input 
+         type="radio"
+         name="onBorad"
+         id="yes"
+         value="Yes"
+         />
+         <label for="yes">Yes</label>
+         <input 
+         type="radio"
+         name="onBorad"
+         value="No"
+         id="no"
+          />
+         <label for="no">No</label>
+         <input 
+         type="radio" 
+         name="onBorad"
+         value="Nothing"
+         id="Confused"
+         checked
+         />
+         <label for="Confused">Confused</label> <br /><br />
 
+         <!---Special Area-->
+         <fieldset>
+         <p><b>Special Requests</b></p>
+         <textarea cols="40" rows="5"></textarea>
+         </fieldset>
+
+         <b>Thank You Waiting for your response</b> <br />
+         </fieldset>
+         <br /><br />
+         
+         <button type="button">
+            <img src="../Multimedia/up-arrow.png" width="30" height="30" />
+         </button>
+         <button type="button">Button2</button>
+         <button type="reset">Reset</button>
+         <button type="submit">Submit</button>
+         <br />
     </form>
 </body>
 </html>
