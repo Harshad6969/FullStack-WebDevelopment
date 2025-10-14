@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Property Dealer Wedbsit</title>
+    
+    <h2>Iframes</h2>
+    <p>IFrames stands for inline frame. These are used to embed a different website into your own website</p>
+    
+    <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/M_rH3Z_R6-U?si=Sk4rfB2L-f5Bio_t" 
+    title="YouTube video player" 
+    allowfullscreen></iframe>
+    
+    <br />
+
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58688.49444209466!2d75.7560204924649!3d23.16907220258327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39637469de00ff23%3A0x7f82abdf7899d412!2sUjjain%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1760336480157!5m2!1sen!2sin" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="">
+    </iframe>
+
+    <dl>
+        <b><dt>Name:</dt></b>
+        <dd>Harshad Bhargude</dd>
+    </dl>
+</iframe>
+
+<table border="2" cellpadding="10" cellspacing="0" width="100" align="center">
+   <thead>
+    <tr>
+        <th rowspan="2">Roll No</th>
+        <th rowspan="2">Name</th>
+        <th rowspan="2">Gender</th>
+        <th colspan="2">Other Details</th>
+    </tr>
+    <tr>
+        <th>Height</th>
+        <th>Weight</th>
+    </tr>
+   </thead>
+
+   <tbody>
+       <tr>
+        <td>69</td>
+        <td>Harshad</td>
+        <td>Male</td>
+        <td>161</td>
+        <td>89</td>
+       </tr>
+       <tr>
+        <td>70</td>
+        <td>Sanjana</td>
+        <td>Female</td>
+        <td>128</td>
+        <td>52</td>
+       </tr>
+       <tr>
+        <td>71</td>
+        <td>Vidhya</td>
+        <td>Female</td>
+        <td>151</td>
+        <td>65</td>
+       </tr>
+   </tbody>
+   </table>
+   <hr />
+
+   <h1>Forms in HTML</h1>
+
+   <P>Forms are way to take the input from the users</P>
+
+   <hr />
+
+   <form action="">
+    <input type="text" placeholder="Enter Your Name" name="name"><br><br>
+    <input type="email" placeholder="Enter Your Email ID" name="email"><br><br>
+    <input type="password" placeholder="Enter Your Password" name="password"><br><br>
+
+    <p>Which conference you are intrested to attend ?</p>
+    <input type="checkbox" name="conference" value="AI"> AI
+    <input type="checkbox" name="conference" value="Web Dev"> Web Dev
+    <input type="checkbox" name="conference" value="Dta Anylysis"> Dta Anylysis <br><br>
+
+
+
+    <input type="radio" name="Gender" value="Male"> Male
+    <input type="radio" name="Gender" value="Female"> Female<br><br>
+
+    <input type="checkbox"name="hobby" value="Swimming"> Swimming
+    <input type="checkbox" name="hobby" value="Cooking"> Cooking
+    <input type="checkbox"name="hobby" value="Reading"> Reading <br><br>
+    
+
+    <select name="country">
+        <option>India</option>
+        <option>Canada</option>
+        <option>Japan</option>
+    </select><br><br>
+
+    <input type="text" placeholder="Please Share your valueable Feedback :)" name="Event">
+
+    
+    <textarea type="text" placeholder="Please share your valueable feedback :)" name="feedback">
+
+    </textarea><br><br>
+    <input type="submit"><input type="reset">
+   </form>
+
+</body>
+</html>
